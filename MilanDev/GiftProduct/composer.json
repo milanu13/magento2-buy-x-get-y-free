@@ -1,0 +1,22 @@
+{
+    "name": "milandev/module-giftproduct",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "milanu13@gmail.com",
+            "name": "Milan Chandro"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MilanDev\\GiftProduct\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="milandev" sortOrder="999" translate="label">
+			<label>MilanDev</label>
+		</tab>
+		<section id="giftproduct" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>Gift Product</label>
+			<tab>milandev</tab>
+			<resource>MilanDev_GiftProduct::config_milandev_giftproduct</resource>
+			<group id="giftproductgroup" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Gift Product</label>
+				<field id="enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Enabled</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="sku" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>SKU</label>
+					<comment/>
+				</field>
+				<field id="coupon_code" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+					<label>Coupon Code</label>
+					<comment/>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
